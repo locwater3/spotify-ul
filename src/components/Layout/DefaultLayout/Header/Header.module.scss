@@ -1,0 +1,113 @@
+.wrapper{
+    --bg-transparent: transparent;
+    --white: #fff;
+    --text-scale: scale(1.04);
+    --text-grey: #a7a7a7;
+
+    height: 64px;
+    background-color: #121212;
+    width: 100%;
+
+}
+
+.inner{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+}
+
+.btn-tab{
+    display: flex;
+    gap: 16px;
+
+    button{
+        height: 32px;
+        width: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // background-color: rgba(0,0,0,.7);
+        border-radius: 50%;
+        color: var(--text-white);
+    }
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    min-width: 165px;
+    background-color: var(--white);
+    border-radius: 500px;
+    height: 42px;
+    
+    input{
+        color: #b3b3b3;
+        font-size: 1.6rem;
+        border: none;
+        width: 100%;
+    }
+
+    .search-btn,
+    .close-btn{
+        display: flex;
+        align-self: center;
+        background-color: var(--bg-transparent);
+        padding: 0 16px;
+
+        &:hover{
+            cursor: text;
+        }
+    } 
+}
+
+.actions {
+    display: inline-flex;
+
+    button{
+        color: var(--text-grey);
+        padding: 8px;
+        font-weight: 700;
+        letter-spacing: 1.76px;
+        line-height: 18px;
+        font-size: 1.8rem;
+        background-color: var(--bg-transparent);
+
+        &:hover{
+            transform: var(--text-scale);
+            color: var(--white);
+        }
+    }
+}
+
+.login{
+    display: flex;
+
+    button{
+        padding: 14px 32px;
+        border-radius: 500px;
+        font-size: 1.8rem;
+        font-weight: 700;
+    }
+
+    .sign-up-btn{
+        background-color: var(--bg-transparent);
+        letter-spacing: 0.5px;
+        color: var(--text-grey);
+        line-height: 18px;
+
+        &:hover{
+            transform: var(--text-scale);
+            color: var(--white);
+        }
+    }
+
+    .login-btn{
+
+        &:hover{
+            transform: var(--text-scale);
+            background-color: #f6f6f6;
+        }
+    }
+}
