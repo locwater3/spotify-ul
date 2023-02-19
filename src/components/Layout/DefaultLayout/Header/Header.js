@@ -9,12 +9,12 @@ function Header() {
         <header className={cx('wrapper')}>
             <div className={cx('inner')}>
                 <div className={cx('btn-tab')}>
-                <button className={cx('arrow-left-btn')}>
-                    <img src={images.arrowLeft} alt="Go back" />
-                </button>
-                <button className={cx('arrow-right-btn')}>
-                    <img src={images.arrowRight} alt="Go forward" />
-                </button>
+                    <button className={cx('arrow-left-btn')}>
+                        <img src={images.arrowLeft} alt="Go back" />
+                    </button>
+                    <button className={cx('arrow-right-btn')}>
+                        <img src={images.arrowRight} alt="Go forward" />
+                    </button>
                 </div>
                 <div className={cx('search')}>
                     <button className={cx('search-btn')}>
